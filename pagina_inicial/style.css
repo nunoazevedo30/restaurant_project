@@ -25,18 +25,14 @@ body {
 }
 
 /* Propriedades da Navbar */
-
-.navbar {
-  padding: 2rem 2rem;
+.custom-navbar {
+  padding: 0;
   background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar-expand-lg .navbar-nav {
-  gap: 50px !important;
+  height: 80px;
 }
 
 .navbar-wrapper {
@@ -44,7 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
 }
 
 .navbar-brand {
@@ -52,28 +48,41 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 100%; 
 }
 
+.custom-logo {
+  max-height: 50px; 
+  height: auto; 
+  margin-left: 10px; 
+}
+
+/* Centralização do menu */
 .navbar-nav-center {
   flex: 2;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
+  height: 100%; 
 }
 
 .navbar-nav-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center; 
 }
 
+/* Estilização dos Links */
 .navbar-nav .nav-link {
   color: #000;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
   position: relative;
-  transition: color 0.3s ease;
+  padding: 0.5rem 0;
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link::after {
@@ -81,7 +90,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #82a93a;
+  background-color: var(--primary);
   bottom: -2px;
   left: 0;
   transition: width 0.3s ease;
@@ -92,14 +101,16 @@ body {
   width: 100%;
 }
 
+/* Botão de Reservar */
 .navbar-nav-right .btn {
-  background-color: #f99948;
+  background-color: var(--lightOrange);
   color: #fff;
   border-radius: 5px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   transition: background-color 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .navbar-nav-right .btn:hover {
-  background-color: #f7801a;
+  background-color: var(--darkOrange);
 }
