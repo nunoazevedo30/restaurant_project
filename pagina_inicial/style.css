@@ -1,6 +1,7 @@
 /* Variáveis das cores */
 :root {
   --background: #ffffff;
+  --secondaryBackground: #fafafa;
   --lightOrange: #f99948;
   --darkOrange: #f7801a;
   --cardBackground: #fff7e9;
@@ -27,8 +28,7 @@ body {
 /* Propriedades da Navbar */
 
 .navbar {
-  padding: 0.5rem 1rem;
-  background-color: #fff;
+  background-color: var(--secondaryBackground);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 99%;
   margin: 0;
   padding: 0;
   height: 80px;
@@ -54,10 +54,11 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 5px;
 }
 
-.logo{
-  max-width: 250px!important;
+.logo {
+  max-width: 250px !important;
   max-height: 80px;
   height: auto;
 }
@@ -114,6 +115,39 @@ body {
 
 /* Footer */
 
-#footerContainer{
-  
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: var(--secondaryBackground);
 }
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialLinks a i {
+  font-size: 20px;
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover i {
+  color: var(--primary);
+}
+hr {
+  border: 1px solid var(--primary);
+  margin: 0;
+}
+
+/* */
