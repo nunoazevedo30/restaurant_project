@@ -25,14 +25,18 @@ body {
 }
 
 /* Propriedades da Navbar */
-.custom-navbar {
-  padding: 0;
+
+.navbar {
+  padding: 0.5rem 1rem;
   background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+}
+
+.navbar-expand-lg .navbar-nav {
+  gap: 50px !important;
 }
 
 .navbar-wrapper {
@@ -40,7 +44,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 80px;
 }
 
 .navbar-brand {
@@ -48,41 +54,34 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100%; 
 }
 
-.custom-logo {
-  max-height: 50px; 
-  height: auto; 
-  margin-left: 10px; 
+.logo{
+  max-width: 250px!important;
+  max-height: 80px;
+  height: auto;
 }
 
-/* Centralização do menu */
 .navbar-nav-center {
   flex: 2;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 50px;
-  height: 100%; 
 }
 
 .navbar-nav-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  align-items: center; 
 }
 
-/* Estilização dos Links */
 .navbar-nav .nav-link {
   color: #000;
   font-weight: 500;
-  font-size: 1rem;
-  position: relative;
   padding: 0.5rem 0;
-  text-align: center;
+  position: relative;
   transition: color 0.3s ease;
+  text-align: center;
 }
 
 .navbar-nav .nav-link::after {
@@ -90,7 +89,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: var(--primary);
+  background-color: #82a93a;
   bottom: -2px;
   left: 0;
   transition: width 0.3s ease;
@@ -101,16 +100,20 @@ body {
   width: 100%;
 }
 
-/* Botão de Reservar */
 .navbar-nav-right .btn {
-  background-color: var(--lightOrange);
+  background-color: #f99948;
   color: #fff;
   border-radius: 5px;
   padding: 0.4rem 1.5rem;
   transition: background-color 0.3s ease;
-  font-size: 0.9rem;
 }
 
 .navbar-nav-right .btn:hover {
-  background-color: var(--darkOrange);
+  background-color: #f7801a;
+}
+
+/* Footer */
+
+#footerContainer{
+  
 }
