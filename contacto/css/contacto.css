@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Corpo e fonte */
 body {
     font-family: Arial, sans-serif;
@@ -113,3 +114,184 @@ body {
     margin: 20px auto;
     max-width: 600px;
   }
+=======
+/* Variáveis das cores */
+:root {
+  --background: #ffffff;
+  --secondaryBackground: #fafafa;
+  --lightOrange: #f99948;
+  --darkOrange: #f7801a;
+  --cardBackground: #fff7e9;
+  --text: #000000;
+  --greenText: #485441;
+  --greyText: #8e8e8e;
+  --primary: #82a93a;
+  --secondary: #4b882a;
+}
+
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background do body */
+body {
+  background-color: var(--background);
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Propriedades da Navbar */
+
+.navbar {
+  background-color: var(--secondaryBackground);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav {
+  gap: 50px !important;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0;
+  height: 60px;
+}
+
+.navbar-brand {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  max-width: 250px !important;
+  max-height: 80px;
+  height: auto;
+}
+
+.navbar-nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navbar-nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #82a93a;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav-right .btn {
+  background-color: #f99948;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.4rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav-right .btn:hover {
+  background-color: #f7801a;
+}
+
+/* Footer */
+
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: var(--secondaryBackground);
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialLinks a i {
+  font-size: 20px;
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover i {
+  color: var(--primary);
+}
+hr {
+  border: 1px solid var(--primary);
+  margin: 0;
+}
+
+/* Main content */
+main {
+  width: 98%;
+  flex: 1;
+}
+
+
+/*  MAIN  */
+
+
+
+>>>>>>> Stashed changes
