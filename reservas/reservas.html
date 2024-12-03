@@ -38,6 +38,127 @@
     
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!-- Meta Tags para otimização de SEO -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eduardo,Rafaela,Marina,Nuno" />
+    <meta name="generator" content="VSCode" />
+    <meta name="keywords" content="HTML5,CSS3,JS,BOOTSTRAP" />
+    <meta name="description" content="Página Inicial" />
+    <meta name="aplication-name" content="Restaurant Website" />
+
+    <!-- Link FontAwesome -->
+
+
+    <!-- Link BootStrap (CSS & JS) -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--Título da Página -->
+
+    <title>Eventos</title>
+
+    <!-- Links do CSS -->
+
+    <link rel="stylesheet" href="/reservas/css/reservas.css">
+    <link rel="stylesheet" href="/reservas/css/reservasMobile.css">
+    <link rel="stylesheet" href="/pagina_inicial/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo Bem-Me-Quer">
+            <span><strong>BEM-ME-QUER</strong><br>Nutrindo e Sabores</span>
+        </div>
+        <nav>
+            <a href="#">Página Inicial</a>
+            <a href="#">Menu</a>
+            <a href="#">Eventos</a>
+            <a href="#">Contactos</a>
+        </nav>
+        <a href="#" class="btn-reserve">Reserve já!</a>
+    </header>
+
+    <div class="container">
+        <h1>RESERVAS</h1>
+        <div class="reserva-container">
+            <!--texto esq-->
+
+
+            <div class="reserva-texto">
+                <p>ALGUM TEXTO AQUI</p>
+
+                <p>RESERVE SUA MESA CONOSCO. </p>
+
+                <p> ENVIAREMOS UM E-MAIL DE CONFIRMAÇÃO...</p>
+
+            </div>
+
+            <!--form á direita-->
+            <form>
+                <div class="divisoes">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+                <div class="divisoes">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+                </div>
+                <div class="divisoes">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email">
+                </div>
+
+                <div class="row">
+                    <div class="divisoes">
+                        <label for="pessoas">Nº de Pessoas:</label>
+                        <select id="pessoas" name="pessoas">
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                        </select>
+                    </div>
+                    <div class="divisoes">
+                        <label for="data">Data e Hora:</label>
+                        <input type="datetime-local" id="data" name="data">
+                    </div>
+                </div>
+                <div class="divisoes">
+                    <label for="mensagem">Mensagem Adicional:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva uma mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Reserve agora</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <strong>Morada:</strong> R. de Ciriaco Cardoso 186
+        </div>
+        <div>
+            <strong>Horário de atendimento:</strong> Todos os dias - 12h00 às 21h00
+        </div>
+        <div class="socials">
+            <a href="#">&</a>
+            <a href="#">&</a>
+        </div>
+    </footer>
+</body>
+
+</html>
 </body>
 </html>

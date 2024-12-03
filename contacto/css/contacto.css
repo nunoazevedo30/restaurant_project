@@ -1,0 +1,115 @@
+/* Corpo e fonte */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Título principal */
+  .title {
+    font-size: 2.5rem;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Mapa */
+  .map-container {
+    border: none;
+    overflow: hidden;
+  }
+  
+  /* Título do formulário */
+  .form-title {
+    border:none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  /* Formulário */
+  .contact-section form {
+    border: none;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .contact-section .form-control {
+    background-color: #fef6e7;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section .btn-primary {
+    border:none;
+    background-color: #ff8000;
+    text-align: center;
+    width: 30%;
+    padding: 07px 30px;
+    cursor: pointer;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #e06d00;
+    border:none;
+  }
+  
+  .mb-3 {
+    display: flex;
+    border:none;
+  }
+  
+  .label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25% !important;
+    border:none;
+  }
+  
+  .inputForm {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50% !important;
+    border:none;
+  }
+  .messageDiv {
+    border:none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  /* -------- Estilo para a classificação por estrelas -------- */
+  .rating {
+    gap: 5px;
+  }
+  
+  .rating label {
+    font-size: 2rem; /* Tamanho das estrelas */
+    color: #ccc; /* Cor padrão */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffc107; /* Cor ao passar o mouse */
+  }
+  
+  .rating input:checked ~ label {
+    color: #fd7e14; /* Cor ao selecionar uma estrela */
+  }
+  
+  /* -------- Estilo do setor de opinião -------- */
+  .opinion-section {
+    background-color: #e7d31c;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+  }
